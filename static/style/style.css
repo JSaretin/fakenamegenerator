@@ -1,0 +1,45 @@
+html, *, body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.dark {
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+}
+
+.light {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+.inner-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Rancho', cursive;
+}
+
+#name {
+    font-size: 70px;
+    
+    text-shadow: 1px 1px 4px rgb(255, 255, 255, 0.3);
+}
+
+.d-inner {
+    background-color: blue;
+}
+
+@media only screen and (max-width: 600px) {
+    #name {
+        font-size: 40px;
+    }
+  }

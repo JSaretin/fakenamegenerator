@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Name Generator</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style/style.css')}}">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+        </style>  
+    <!------ Include the above in your HEAD tag ---------->
+</head>
+<body>
+    
+    <div class="container light">
+        <!-- <small>change mode:</small><input type="checkbox" id="mode"> -->
+        <div class="inner-container">
+            <h1 id='name'>{{faker.first_name()}} {{faker.last_name()}}</h1>
+            <h2>{{faker.email()}}</h2>
+            <h2>{{faker.address()}}</h2>
+            <h3>{{faker.phone_number()}}</h3>
+        </div>
+    </div>
+
+    <script>
+        let mode_btn = document.getElementById('mode')
+        mode_btn.addEventListener('click', function(){
+            var element = document.getElementsByClassName('container')[0]
+            element.classList.toggle("dark");
+            element.classList.toggle("light");
+            mode_btn.classList.toggle("dark")
+            mode_btn.classList.toggle("light")
+        })
+    </script>
+</body>
+</html>
