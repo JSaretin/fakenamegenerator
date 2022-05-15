@@ -9,7 +9,7 @@ Todo
 * [ ] Generate name on button click instead of page reload
 * [ ] send generated info to Telegram user
 * [ ] send generated info to email
-* [ ] 
+
 
 ## Licensing
 
